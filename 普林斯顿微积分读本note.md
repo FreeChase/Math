@@ -76,3 +76,83 @@ $$
 $$
     \frac{d}{dx}x^n=nx^{n-1}
 $$
+$$
+    \frac{d}{dx}x=1
+$$
+
+$$
+    \frac{d}{dx}C= 0
+$$
+
+
+### 通过乘积法则求积函数的导数
+
+**乘积法则(版本 1)**:
+$$
+如果 h(x) = f(x)g(x), 那么 h'(x) = f'(x)g(x) + f(x)g'(x)
+$$
+
+**乘积法则 (版本 2)**:
+
+如果 $y = uv$,则有  
+$$
+\frac{dy}{dx}= v \frac{du}{dx} + u \frac{dv}{dx}
+$$
+
+**乘积法则 (三个变量)**:
+
+如果$y=uvw$,则有
+$$
+    \frac{dy}{dx}=\frac{du}{dx}vw+u\frac{dv}{dx}w+uv\frac{dw}{dx}
+$$
+
+### 通过商法则求商函数的导数
+**商法则 (版本 1)**:
+
+ $\quad$ 如果 $h(x) = \frac{f(x)}{g(x)}$, 那么
+ $$
+ h'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}.
+ $$
+
+
+**商法则 (版本 2)**:
+
+$\quad$ 如果 $y = \frac{u}{v}$, 那么
+$$\frac{dy}{dx} = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2}.$$
+
+**链式求导法则 (版本 1)**:
+ 
+$\quad$ 如果 $h(x) = f(g(x))$, 那么 $h'(x) = f'(\ g(x)\ )g'(x)$.
+
+**链式求导法则 (版本 2)**:
+
+$\quad$ 如果 $y$ 是 $u$ 的函数, 并且 $u$ 是 $x$ 的函数, 那么
+$$\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}.$$
+
+
+## chapter7 三角函数的极限和导数
+
+**极限1：**
+$$
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1.
+$$
+
+
+**极限2**:
+$$\lim_{x \to 0} \frac{\tan(x)}{x} = \lim_{x \to 0} \frac{\frac{\sin(x)}{\cos(x)}}{x} = \lim_{x \to 0} \left( \frac{\sin(x)}{x} \right) \left( \frac{1}{\cos(x)} \right) = (1) \left( \frac{1}{1} \right) = 1.
+
+$$
+这样就证明了
+$$\lim_{x \to 0} \frac{\tan(x)}{x} = 1.
+$$
+
+
+## chapter11 洛必达法则
+
+**洛必达法则**：
+
+如果 $f(a) = g(a) = 0$, 那么 
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+$$
+注意：适用于  $\frac{0}{0}$ 或 $\frac{\infty}{\infty}$ 型未定式
