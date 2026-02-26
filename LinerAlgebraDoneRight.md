@@ -4,6 +4,11 @@
 - [chapter3 liner map](#chapter3-liner-map)
   - [3B Null Spaces and Ranges](#3b-null-spaces-and-ranges)
   - [3C Matrices](#3c-matrices)
+  - [3.52 定义：列秩，行秩](#352-定义列秩行秩)
+  - [3.54 定义：转置，$A^{\\mathrm{t}}$](#354-定义转置amathrmt)
+  - [3.56 列–行分解（column-row factorization）](#356-列行分解column-row-factorization)
+  - [3.57 列秩等于行秩](#357-列秩等于行秩)
+  - [3.58 定义：秩（rank）](#358-定义秩rank)
 - [补充答疑](#补充答疑)
   - [List 和 标准基的联系与区别](#list-和-标准基的联系与区别)
   - [基，标准基，空间向量，基准向量](#基标准基空间向量基准向量)
@@ -398,8 +403,48 @@ $$Ab = b_1A_{\cdot,1} + \dots + b_nA_{\cdot,n}.$$
 假设 $C$ 是一个 $m \times c$ 矩阵，且 $R$ 是一个 $c \times n$ 矩阵。
 
 (a) 如果 $k \in \{1, \dots, n\}$，那么 $CR$ 的第 $k$ 列是 $C$ 的各列的线性组合，该线性组合的系数来自于 $R$ 的第 $k$ 列。
+>各列的意思就是所有列
 
 (b) 如果 $j \in \{1, \dots, m\}$，那么 $CR$ 的第 $j$ 行是 $R$ 的各行的线性组合，该线性组合的系数来自于 $C$ 的第 $j$ 行。
+
+
+### 3.52 定义：列秩，行秩
+
+设 $A$ 是一个元素属于域 $\mathbb{F}$ 的 $m \times n$ 矩阵。
+
+- **$A$ 的列秩** 是 $A$ 的各列在 $\mathbb{F}^{m,1}$ 中张成空间的维数。
+- **$A$ 的行秩** 是 $A$ 的各行在 $\mathbb{F}^{1,n}$ 中张成空间的维数。
+
+
+
+### 3.54 定义：转置，$A^{\mathrm{t}}$
+
+矩阵$A$的**转置**（记作$A^{\mathrm{t}}$）是通过交换$A$的行与列所得到的矩阵。
+具体而言，若$A$是一个$m \times n$矩阵，则$A^{\mathrm{t}}$是一个$n\times m$矩阵，其元素由下式给出：
+
+$$
+(A^{\mathrm{t}})_{k,j}=A_{j,k}
+$$
+
+### 3.56 列–行分解（column-row factorization）
+
+设 $A$是一个元素属于域$\mathbb{F}$的$m \times n$矩阵，且其**列秩**为$c\geq1$。
+则存在一个$m\times c$矩阵$C$和一个$c\times n$矩阵$R$，二者元素均属于$\mathbb{F}$，使得：
+
+$$
+A = CR
+$$
+
+
+### 3.57 列秩等于行秩
+
+设 $A\in\mathbb{F}^{m,n}$（即$A$是一个元素属于域$\mathbb{F}$的$m\times n$矩阵），则
+**$A$的列秩=$A$的行秩**。
+
+
+### 3.58 定义：秩（rank）
+
+矩阵 $A \in \mathbb{F}^{m,n}$ 的**秩**，定义为 $A$ 的**列秩**。
 
 
 ---
